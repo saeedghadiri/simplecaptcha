@@ -38,11 +38,11 @@ public class DefaultTextProducer implements TextProducer {
     }
     
     public String getText() {
-        int car = _srcChars.length - 1;
+        int car = _srcChars.length;
 
         String capText = "";
         for (int i = 0; i < _length; i++) {
-            capText += _srcChars[_gen.nextInt(car) + 1];
+            capText += _srcChars[_gen.nextInt(car)];
         }
 
         return capText;
