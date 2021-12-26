@@ -20,14 +20,14 @@ import java.awt.Color;
 public class SimpleCaptchaGenerator {
 
     public static void main(String[] args) throws IOException {
-//        String folder = args[0];
-//        String img_width = args[1];
-//        String img_height = args[2];
-//        int num_samples = Integer.parseInt(args[3]);
-        String folder = "data";
-        String img_width = "160";
-        String img_height = "50";
-        int num_samples = 1000;;
+        String folder = args[0];
+        String img_width = args[1];
+        String img_height = args[2];
+        int num_samples = Integer.parseInt(args[3]);
+//        String folder = "data";
+//        String img_width = "160";
+//        String img_height = "50";
+//        int num_samples = 1000;;
 
         Path currentPath = Paths.get(System.getProperty("user.dir"));
         Path dataPath = Paths.get(currentPath.toString(), folder);
